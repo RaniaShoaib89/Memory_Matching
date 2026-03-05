@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Memory Game</title>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+  <div class="header">
+    <h1>Memory Matching Game</h1>
+  </div>
+
+  <div class="game-container">
+    <div id="stats" class="stats-bar">
+      <span>Moves: <span id="moves">0</span></span>
+      <span>Time: <span id="time">0</span>s</span>
+      <span>Matches: <span id="matches">0</span></span>
+    </div>
+
+    <div id="game-board" class="game-board"></div>
+
+    <div class="button-group">
+      <button id="restart" class="btn btn-primary">Restart</button>
+    </div>
+  </div>
+  <div id="win-screen" class="win-screen">
+    <div class="win-content">
+      <h1>You Won!</h1>
+      <p id="final-stats" class="final-stats"></p>
+      <button id="play-again" class="btn btn-primary">Play Again</button>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
